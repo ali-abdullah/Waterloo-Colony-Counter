@@ -10,9 +10,11 @@
 
 #m.show()
 
+# library to import a jpg file into RGB values as a list
 from PIL import Image
 #import numpy as np
 
+# opens the selected file
 im = Image.open("petridish.jpg", 'r')
 width, height = im.size #produces the wigth and height of the picture
 pixel_values = list(im.getdata()) #produces a list of all the pixels in the image
